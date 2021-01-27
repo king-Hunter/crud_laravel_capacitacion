@@ -31,28 +31,33 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
+                                            <label>Nombre del empleado</label>
                                             <input type="text" name="nombre" id="nombre" class="form-control input-sm" value="{{$empleado->nombre}}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
+                                            <label>Puesto</label>
                                             <input type="text" name="puesto" id="puesto" class="form-control input-sm" value="{{$empleado->puesto}}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="email" id="email" class="form-control input-sm" value="{{$empleado->email}}">
+                                            <label>Correo</label>
+                                            <input type="email" name="email" id="email" class="form-control input-sm" value="{{$empleado->email}}">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="edad" id="edad" class="form-control input-sm" value="{{$empleado->edad}}">
+                                            <label>Edad</label>
+                                            <input type="number" name="edad" id="edad" class="form-control input-sm" value="{{$empleado->edad}}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
+                                            <label>Antigüedad del empleado</label>
                                             <input type="text" name="antiguedad" id="antiguedad" class="form-control input-sm" value="{{$empleado->antiguedad}}">
                                         </div>
                                     </div>
@@ -60,11 +65,13 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="sueldo" id="sueldo" class="form-control input-sm" value="{{$empleado->sueldo}}">
+                                            <label> Sueldo </label>
+                                            <input type="number" name="sueldo" id="sueldo" class="form-control input-sm" value="{{$empleado->sueldo}}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
+                                            <label> Selecciona el tipo de moneda</label>
                                             <select class="form-control" name="moneda_sueldo" id="moneda_sueldo" placeholder="Moneda Sueldo">
                                                 @foreach ($list as $options)
                                                 @if ($empleado->moneda_sueldo == $options)

@@ -30,41 +30,48 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
+                                            <label>Nombre del empleado</label>
                                             <input type="text" name="nombre" id="nombre" class="form-control input-sm" placeholder="Nombre del empleado">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="puesto" id="puesto" class="form-control input-sm" placeholder="Puesto">
+                                            <label>Puesto</label>
+                                            <input type="text" name="puesto" id="puesto" class="form-control input-sm" placeholder="gerente">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="email" id="email" class="form-control input-sm" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="edad" id="edad" class="form-control input-sm" placeholder="Edad">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="antiguedad" id="antiguedad" class="form-control input-sm" placeholder="Antigüedad del empleado">
+                                            <label>Correo</label>
+                                            <input type="email" name="email" id="email" class="form-control input-sm" placeholder="ejemplo@ejempolo.com">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="sueldo" id="sueldo" class="form-control input-sm" placeholder="Sueldo">
+                                            <label>Edad</label>
+                                            <input type="number" name="edad" id="edad" class="form-control input-sm" placeholder="15">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Antigüedad del empleado</label>
+                                            <input type="text" name="antiguedad" id="antiguedad" class="form-control input-sm" placeholder="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label> Sueldo </label>
+                                            <input type="number" name="sueldo" id="sueldo" class="form-control input-sm" placeholder="334535">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <div class="form-group">
+                                                <label> Selecciona el tipo de moneda</label>
                                                 <select class="form-control" name="moneda_sueldo" id="moneda_sueldo" placeholder="Moneda Sueldo">
                                                 @foreach ($list as $options)
                                                 <option>{{ $options }}</option>
